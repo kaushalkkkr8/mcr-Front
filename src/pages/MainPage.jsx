@@ -48,7 +48,7 @@ const filterData= data?.filter((recipe) =>
         <div className="row my-3">
           <h4>All Recipies: </h4>
           {filterData.map((recipe) => (
-            <>
+            
               <div className="col-md-3 my-3" key={recipe._id}>
                 <div className="card shadow">
                   <img src={recipe.imageLink} alt="" className="img-top" />
@@ -67,7 +67,7 @@ const filterData= data?.filter((recipe) =>
                   </div>
                 </div>
               </div>
-            </>
+            
           ))}
         </div>
       </div>
