@@ -10,8 +10,8 @@ const MainPage = () => {
 
   const handleDelete = async (id) => {
     try {
-      const url = `${url}reciepe/${id}`;
-      const response = await fetch(url, {
+      const fetchUrl = `${url}reciepe/${id}`;
+      const response = await fetch(fetchUrl, {
         method: "DELETE",
       });
   
@@ -22,7 +22,7 @@ const MainPage = () => {
         console.error(`Error deleting recipe with ID ${id}`);
       }
     } catch (error) {
-      console.error("Error occurred while deleting the recipe:", error);
+      console.log("Error occurred while deleting the recipe:", error);
     }
   };
   
